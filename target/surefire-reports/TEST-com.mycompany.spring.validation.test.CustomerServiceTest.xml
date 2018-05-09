@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="6" failures="3" name="com.mycompany.spring.validation.test.CustomerServiceTest" time="0.379" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.171-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/thanatos/arru/spring-validation-aop"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="PE"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/thanatos/arru/spring-validation-aop"/>
+    <property name="java.runtime.version" value="1.8.0_171-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/home/thanatos/Documents/workspace-sts-3.9.4.RELEASE/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf9114285531704596406.tmp"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.13.0-39-generic"/>
+    <property name="user.home" value="/home/thanatos"/>
+    <property name="user.timezone" value="America/Lima"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="thanatos"/>
+    <property name="java.class.path" value="/home/thanatos/Descargas/sts-bundle/sts-3.9.4.RELEASE/plugins/org.eclipse.m2e.maven.runtime_1.8.3.20180227-2135/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="es"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_171"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/home/thanatos/arru/spring-validation-aop/EMBEDDED"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.mycompany.spring.validation.test.CustomerServiceTest" name="throwsViolationExceptionWhenReturnValueTooLong" time="0.276">
+    <failure message="expected:&lt;l[ength must be between 3 and] 5&gt; but was:&lt;l[a longitud tiene que estar entre 3 y] 5&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;l[ength must be between 3 and] 5&gt; but was:&lt;l[a longitud tiene que estar entre 3 y] 5&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.mycompany.spring.validation.test.CustomerServiceTest.throwsViolationExceptionWhenReturnValueTooLong(CustomerServiceTest.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>06:21:50,720 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+06:21:50,721 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback-test.xml] at [file:/home/thanatos/arru/spring-validation-aop/target/test-classes/logback-test.xml]
+06:21:50,830 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+06:21:50,837 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+06:21:50,850 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+06:21:50,920 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+06:21:50,920 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+06:21:50,920 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+06:21:50,921 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework] to TRACE
+06:21:50,921 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.springframework] to false
+06:21:50,921 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[org.springframework]
+06:21:50,922 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to TRACE
+06:21:50,922 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+06:21:50,922 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+06:21:50,923 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@cb5822 - Registering current configuration as safe fallback point
+
+2018-05-09 06:21:50 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.mycompany.spring.validation.test.CustomerServiceTest]
+2018-05-09 06:21:50 [main] DEBUG o.s.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+2018-05-09 06:21:51 [main] DEBUG o.s.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+2018-05-09 06:21:51 [main] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.mycompany.spring.validation.test.CustomerServiceTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+2018-05-09 06:21:51 [main] TRACE o.s.t.c.support.ContextLoaderUtils - Retrieved @ContextConfiguration [@org.springframework.test.context.ContextConfiguration(inheritLocations=true, inheritInitializers=true, locations=[], initializers=[], name=, value=[], classes=[class com.mycompany.spring.validation.ValidationConfig, class com.mycompany.spring.aop.AspectConfig], loader=interface org.springframework.test.context.ContextLoader)] for declaring class [com.mycompany.spring.validation.test.CustomerServiceTest].
+2018-05-09 06:21:51 [main] TRACE o.s.t.c.support.ContextLoaderUtils - Resolved context configuration attributes: [ContextConfigurationAttributes@4493d195 declaringClass = &apos;com.mycompany.spring.validation.test.CustomerServiceTest&apos;, classes = &apos;{class com.mycompany.spring.validation.ValidationConfig, class com.mycompany.spring.aop.AspectConfig}&apos;, locations = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;]
+2018-05-09 06:21:51 [main] TRACE o.s.t.c.s.DefaultTestContextBootstrapper - Resolving ContextLoader for context configuration attributes [ContextConfigurationAttributes@4493d195 declaringClass = &apos;com.mycompany.spring.validation.test.CustomerServiceTest&apos;, classes = &apos;{class com.mycompany.spring.validation.ValidationConfig, class com.mycompany.spring.aop.AspectConfig}&apos;, locations = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;]
+2018-05-09 06:21:51 [main] TRACE o.s.t.c.s.DefaultTestContextBootstrapper - Using ContextLoader class [org.springframework.test.context.support.DelegatingSmartContextLoader] for test class [com.mycompany.spring.validation.test.CustomerServiceTest]
+2018-05-09 06:21:51 [main] TRACE o.s.t.c.s.DefaultTestContextBootstrapper - Processing locations and classes for context configuration attributes [ContextConfigurationAttributes@4493d195 declaringClass = &apos;com.mycompany.spring.validation.test.CustomerServiceTest&apos;, classes = &apos;{class com.mycompany.spring.validation.ValidationConfig, class com.mycompany.spring.aop.AspectConfig}&apos;, locations = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;]
+2018-05-09 06:21:51 [main] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to AnnotationConfigContextLoader to process context configuration [ContextConfigurationAttributes@4493d195 declaringClass = &apos;com.mycompany.spring.validation.test.CustomerServiceTest&apos;, classes = &apos;{class com.mycompany.spring.validation.ValidationConfig, class com.mycompany.spring.aop.AspectConfig}&apos;, locations = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;].
+2018-05-09 06:21:51 [main] TRACE o.s.c.i.s.SpringFactoriesLoader - Loaded [org.springframework.test.context.ContextCustomizerFactory] names: [org.springframework.test.context.web.socket.MockServerContainerContextCustomizerFactory]
+2018-05-09 06:21:51 [main] TRACE o.s.t.c.s.ApplicationContextInitializerUtils - Processing context initializers for context configuration attributes [ContextConfigurationAttributes@4493d195 declaringClass = &apos;com.mycompany.spring.validation.test.CustomerServiceTest&apos;, classes = &apos;{class com.mycompany.spring.validation.ValidationConfig, class com.mycompany.spring.aop.AspectConfig}&apos;, locations = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;]
+2018-05-09 06:21:51 [main] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.mycompany.spring.validation.test.CustomerServiceTest]
+2018-05-09 06:21:51 [main] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [com.mycompany.spring.validation.test.CustomerServiceTest]: using defaults.
+2018-05-09 06:21:51 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-05-09 06:21:51 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2018-05-09 06:21:51 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
+2018-05-09 06:21:51 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2018-05-09 06:21:51 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4e718207, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1d371b2d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@543c6f6d]
+2018-05-09 06:21:51 [main] TRACE o.s.test.context.TestContextManager - Registering TestExecutionListener: org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4e718207
+2018-05-09 06:21:51 [main] TRACE o.s.test.context.TestContextManager - Registering TestExecutionListener: org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1d371b2d
+2018-05-09 06:21:51 [main] TRACE o.s.test.context.TestContextManager - Registering TestExecutionListener: org.springframework.test.context.support.DirtiesContextTestExecutionListener@543c6f6d
+2018-05-09 06:21:51 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mycompany.spring.validation.test.CustomerServiceTest]
+2018-05-09 06:21:51 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mycompany.spring.validation.test.CustomerServiceTest]
+2018-05-09 06:21:51 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mycompany.spring.validation.test.CustomerServiceTest]
+2018-05-09 06:21:51 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mycompany.spring.validation.test.CustomerServiceTest]
+2018-05-09 06:21:51 [main] TRACE o.s.test.context.TestContextManager - beforeTestClass(): class [com.mycompany.spring.validation.test.CustomerServiceTest]
+2018-05-09 06:21:51 [main] DEBUG o.s.t.c.s.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@42607a4f testClass = CustomerServiceTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@782663d3 testClass = CustomerServiceTest, locations = &apos;{}&apos;, classes = &apos;{class com.mycompany.spring.validation.ValidationConfig, class com.mycompany.spring.aop.AspectConfig}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+2018-05-09 06:21:51 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mycompany.spring.validation.test.CustomerServiceTest]
+2018-05-09 06:21:51 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mycompany.spring.validation.test.CustomerServiceTest]
+2018-05-09 06:21:51 [main] TRACE o.s.test.context.TestContextManager - prepareTestInstance(): instance [com.mycompany.spring.validation.test.CustomerServiceTest@401e7803]
+2018-05-09 06:21:51 [main] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@42607a4f testClass = CustomerServiceTest, testInstance = com.mycompany.spring.validation.test.CustomerServiceTest@401e7803, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@782663d3 testClass = CustomerServiceTest, locations = &apos;{}&apos;, classes = &apos;{class com.mycompany.spring.validation.ValidationConfig, class com.mycompany.spring.aop.AspectConfig}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]]].
+2018-05-09 06:21:51 [main] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to AnnotationConfigContextLoader to load context from [MergedContextConfiguration@782663d3 testClass = CustomerServiceTest, locations = &apos;{}&apos;, classes = &apos;{class com.mycompany.spring.validation.ValidationConfig, class com.mycompany.spring.aop.AspectConfig}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]].
+2018-05-09 06:21:51 [main] DEBUG o.s.t.c.s.AbstractGenericContextLoader - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@782663d3 testClass = CustomerServiceTest, locations = &apos;{}&apos;, classes = &apos;{class com.mycompany.spring.validation.ValidationConfig, class com.mycompany.spring.aop.AspectConfig}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]].
+2018-05-09 06:21:51 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+2018-05-09 06:21:51 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-05-09 06:21:51 [main] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-05-09 06:21:51 [main] DEBUG o.s.t.c.s.AnnotationConfigContextLoader - Registering annotated classes: {class com.mycompany.spring.validation.ValidationConfig, class com.mycompany.spring.aop.AspectConfig}
+2018-05-09 06:21:51 [main] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@103f852: startup date [Wed May 09 06:21:51 PET 2018]; root of context hierarchy
+2018-05-09 06:21:51 [main] DEBUG o.s.c.s.GenericApplicationContext - Bean factory for org.springframework.context.support.GenericApplicationContext@103f852: org.springframework.beans.factory.support.DefaultListableBeanFactory@25a65b77: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,validationConfig,aspectConfig]; root of factory hierarchy
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos; to allow for resolving potential circular references
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Resolved classpath location [com/mycompany/spring/aop/] to resources [URL [file:/home/thanatos/arru/spring-validation-aop/target/classes/com/mycompany/spring/aop/]]
+2018-05-09 06:21:51 [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/thanatos/arru/spring-validation-aop/target/classes/com/mycompany/spring/aop]
+2018-05-09 06:21:51 [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Searching directory [/home/thanatos/arru/spring-validation-aop/target/classes/com/mycompany/spring/aop] for files matching pattern [/home/thanatos/arru/spring-validation-aop/target/classes/com/mycompany/spring/aop/**/*.class]
+2018-05-09 06:21:51 [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Searching directory [/home/thanatos/arru/spring-validation-aop/target/classes/com/mycompany/spring/aop/aspect] for files matching pattern [/home/thanatos/arru/spring-validation-aop/target/classes/com/mycompany/spring/aop/**/*.class]
+2018-05-09 06:21:51 [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Searching directory [/home/thanatos/arru/spring-validation-aop/target/classes/com/mycompany/spring/aop/aspect/annotation] for files matching pattern [/home/thanatos/arru/spring-validation-aop/target/classes/com/mycompany/spring/aop/**/*.class]
+2018-05-09 06:21:51 [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/mycompany/spring/aop/**/*.class] to resources [file [/home/thanatos/arru/spring-validation-aop/target/classes/com/mycompany/spring/aop/AspectConfig.class], file [/home/thanatos/arru/spring-validation-aop/target/classes/com/mycompany/spring/aop/ProtectAnnotationAspect.class], file [/home/thanatos/arru/spring-validation-aop/target/classes/com/mycompany/spring/aop/TraceAnnotationAspect.class], file [/home/thanatos/arru/spring-validation-aop/target/classes/com/mycompany/spring/aop/aspect/annotation/Protect.class], file [/home/thanatos/arru/spring-validation-aop/target/classes/com/mycompany/spring/aop/aspect/annotation/Trace.class]]
+2018-05-09 06:21:51 [main] TRACE o.s.c.a.ClassPathBeanDefinitionScanner - Scanning file [/home/thanatos/arru/spring-validation-aop/target/classes/com/mycompany/spring/aop/AspectConfig.class]
+2018-05-09 06:21:51 [main] TRACE o.s.c.a.ClassPathBeanDefinitionScanner - Ignored because not matching any filter: file [/home/thanatos/arru/spring-validation-aop/target/classes/com/mycompany/spring/aop/AspectConfig.class]
+2018-05-09 06:21:51 [main] TRACE o.s.c.a.ClassPathBeanDefinitionScanner - Scanning file [/home/thanatos/arru/spring-validation-aop/target/classes/com/mycompany/spring/aop/ProtectAnnotationAspect.class]
+2018-05-09 06:21:51 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/home/thanatos/arru/spring-validation-aop/target/classes/com/mycompany/spring/aop/ProtectAnnotationAspect.class]
+2018-05-09 06:21:51 [main] TRACE o.s.c.a.ClassPathBeanDefinitionScanner - Scanning file [/home/thanatos/arru/spring-validation-aop/target/classes/com/mycompany/spring/aop/TraceAnnotationAspect.class]
+2018-05-09 06:21:51 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/home/thanatos/arru/spring-validation-aop/target/classes/com/mycompany/spring/aop/TraceAnnotationAspect.class]
+2018-05-09 06:21:51 [main] TRACE o.s.c.a.ClassPathBeanDefinitionScanner - Scanning file [/home/thanatos/arru/spring-validation-aop/target/classes/com/mycompany/spring/aop/aspect/annotation/Protect.class]
+2018-05-09 06:21:51 [main] TRACE o.s.c.a.ClassPathBeanDefinitionScanner - Ignored because not matching any filter: file [/home/thanatos/arru/spring-validation-aop/target/classes/com/mycompany/spring/aop/aspect/annotation/Protect.class]
+2018-05-09 06:21:51 [main] TRACE o.s.c.a.ClassPathBeanDefinitionScanner - Scanning file [/home/thanatos/arru/spring-validation-aop/target/classes/com/mycompany/spring/aop/aspect/annotation/Trace.class]
+2018-05-09 06:21:51 [main] TRACE o.s.c.a.ClassPathBeanDefinitionScanner - Ignored because not matching any filter: file [/home/thanatos/arru/spring-validation-aop/target/classes/com/mycompany/spring/aop/aspect/annotation/Trace.class]
+2018-05-09 06:21:51 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.mycompany.spring.validation.ValidationConfig.methodValidationPostProcessor()
+2018-05-09 06:21:51 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.mycompany.spring.validation.ValidationConfig.userCreateService()
+2018-05-09 06:21:51 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.mycompany.spring.validation.ValidationConfig; enhanced class name is: com.mycompany.spring.validation.ValidationConfig$$EnhancerBySpringCGLIB$$8995ba0e
+2018-05-09 06:21:51 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition &apos;validationConfig&apos; existing class &apos;com.mycompany.spring.validation.ValidationConfig&apos; with enhanced class &apos;com.mycompany.spring.validation.ValidationConfig$$EnhancerBySpringCGLIB$$8995ba0e&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos; to allow for resolving potential circular references
+2018-05-09 06:21:51 [main] TRACE o.s.c.i.s.SpringFactoriesLoader - Loaded [org.springframework.beans.BeanInfoFactory] names: [org.springframework.beans.ExtendedBeanInfoFactory]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Getting BeanInfo for class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Caching PropertyDescriptors for class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;autowiredAnnotationType&apos; of type [java.lang.Class]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;autowiredAnnotationTypes&apos; of type [java.util.Set]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;beanFactory&apos; of type [org.springframework.beans.factory.BeanFactory]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;class&apos; of type [java.lang.Class]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;order&apos; of type [int]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;requiredParameterName&apos; of type [java.lang.String]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;requiredParameterValue&apos; of type [boolean]
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos; to allow for resolving potential circular references
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Getting BeanInfo for class [org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Caching PropertyDescriptors for class [org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;beanFactory&apos; of type [org.springframework.beans.factory.BeanFactory]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;class&apos; of type [java.lang.Class]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;order&apos; of type [int]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;requiredAnnotationType&apos; of type [java.lang.Class]
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos; to allow for resolving potential circular references
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Getting BeanInfo for class [org.springframework.context.annotation.CommonAnnotationBeanPostProcessor]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Caching PropertyDescriptors for class [org.springframework.context.annotation.CommonAnnotationBeanPostProcessor]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;alwaysUseJndiLookup&apos; of type [boolean]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;beanFactory&apos; of type [org.springframework.beans.factory.BeanFactory]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;class&apos; of type [java.lang.Class]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;destroyAnnotationType&apos; of type [java.lang.Class]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;fallbackToDefaultTypeMatch&apos; of type [boolean]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;initAnnotationType&apos; of type [java.lang.Class]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;jndiFactory&apos; of type [org.springframework.beans.factory.BeanFactory]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;order&apos; of type [int]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;resourceFactory&apos; of type [org.springframework.beans.factory.BeanFactory]
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean &apos;methodValidationPostProcessor&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean &apos;methodValidationPostProcessor&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean &apos;validationConfig&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean &apos;validationConfig&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean &apos;validationConfig&apos; to allow for resolving potential circular references
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Getting BeanInfo for class [com.mycompany.spring.validation.ValidationConfig$$EnhancerBySpringCGLIB$$8995ba0e]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Caching PropertyDescriptors for class [com.mycompany.spring.validation.ValidationConfig$$EnhancerBySpringCGLIB$$8995ba0e]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;beanFactory&apos; of type [org.springframework.beans.factory.BeanFactory]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;class&apos; of type [java.lang.Class]
+2018-05-09 06:21:51 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean &apos;validationConfig&apos; of type [com.mycompany.spring.validation.ValidationConfig$$EnhancerBySpringCGLIB$$8995ba0e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean &apos;validationConfig&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean &apos;methodValidationPostProcessor&apos; to allow for resolving potential circular references
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Getting BeanInfo for class [org.springframework.validation.beanvalidation.MethodValidationPostProcessor]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Caching PropertyDescriptors for class [org.springframework.validation.beanvalidation.MethodValidationPostProcessor]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;beanClassLoader&apos; of type [java.lang.ClassLoader]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;beanFactory&apos; of type [org.springframework.beans.factory.BeanFactory]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;beforeExistingAdvisors&apos; of type [boolean]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;class&apos; of type [java.lang.Class]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;exposeProxy&apos; of type [boolean]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;frozen&apos; of type [boolean]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;opaque&apos; of type [boolean]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;optimize&apos; of type [boolean]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;order&apos; of type [int]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;proxyClassLoader&apos; of type [java.lang.ClassLoader]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;proxyTargetClass&apos; of type [boolean]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;validatedAnnotationType&apos; of type [java.lang.Class]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;validator&apos; of type [javax.validation.Validator]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;validatorFactory&apos; of type [javax.validation.ValidatorFactory]
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name &apos;methodValidationPostProcessor&apos;
+2018-05-09 06:21:51 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+2018-05-09 06:21:51 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.3.Final
+2018-05-09 06:21:51 [main] DEBUG o.h.v.i.e.r.DefaultTraversableResolver - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-05-09 06:21:51 [main] DEBUG o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-05-09 06:21:51 [main] DEBUG o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean &apos;methodValidationPostProcessor&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean &apos;org.springframework.aop.config.internalAutoProxyCreator&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean &apos;org.springframework.aop.config.internalAutoProxyCreator&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean &apos;org.springframework.aop.config.internalAutoProxyCreator&apos; to allow for resolving potential circular references
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Getting BeanInfo for class [org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Caching PropertyDescriptors for class [org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;advisorAdapterRegistry&apos; of type [org.springframework.aop.framework.adapter.AdvisorAdapterRegistry]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;applyCommonInterceptorsFirst&apos; of type [boolean]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;aspectJAdvisorFactory&apos; of type [org.springframework.aop.aspectj.annotation.AspectJAdvisorFactory]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;beanClassLoader&apos; of type [java.lang.ClassLoader]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;beanFactory&apos; of type [org.springframework.beans.factory.BeanFactory]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;class&apos; of type [java.lang.Class]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;customTargetSourceCreators&apos; of type [[Lorg.springframework.aop.framework.autoproxy.TargetSourceCreator;]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;exposeProxy&apos; of type [boolean]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;frozen&apos; of type [boolean]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;includePatterns&apos; of type [java.util.List]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;interceptorNames&apos; of type [[Ljava.lang.String;]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;opaque&apos; of type [boolean]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;optimize&apos; of type [boolean]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;order&apos; of type [int]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;proxyClassLoader&apos; of type [java.lang.ClassLoader]
+2018-05-09 06:21:51 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;proxyTargetClass&apos; of type [boolean]
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean &apos;org.springframework.aop.config.internalAutoProxyCreator&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.c.s.GenericApplicationContext - Unable to locate MessageSource with name &apos;messageSource&apos;: using default [org.springframework.context.support.DelegatingMessageSource@196a42c3]
+2018-05-09 06:21:51 [main] DEBUG o.s.c.s.GenericApplicationContext - Unable to locate ApplicationEventMulticaster with name &apos;applicationEventMulticaster&apos;: using default [org.springframework.context.event.SimpleApplicationEventMulticaster@8519cb4]
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@25a65b77: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,validationConfig,aspectConfig,protectAnnotationAspect,traceAnnotationAspect,methodValidationPostProcessor,userCreateService,org.springframework.aop.config.internalAutoProxyCreator]; root of factory hierarchy
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean &apos;org.springframework.context.event.internalEventListenerProcessor&apos;
+2018-05-09 06:21:51 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean &apos;org.springframework.context.event.internalEventListenerProcessor&apos;
+2018-05-09 06:21:52 [main] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void com.mycompany.spring.aop.ProtectAnnotationAspect.protect(org.aspectj.lang.JoinPoint) throws java.lang.Throwable
+2018-05-09 06:21:52 [main] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void com.mycompany.spring.aop.TraceAnnotationAspect.trace(org.aspectj.lang.JoinPoint) throws java.lang.Throwable
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean &apos;org.springframework.context.event.internalEventListenerProcessor&apos; to allow for resolving potential circular references
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Getting BeanInfo for class [org.springframework.context.event.EventListenerMethodProcessor]
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Caching PropertyDescriptors for class [org.springframework.context.event.EventListenerMethodProcessor]
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;applicationContext&apos; of type [org.springframework.context.ApplicationContext]
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;class&apos; of type [java.lang.Class]
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean &apos;org.springframework.context.event.internalEventListenerProcessor&apos;
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean &apos;org.springframework.context.event.internalEventListenerFactory&apos;
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean &apos;org.springframework.context.event.internalEventListenerFactory&apos;
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean &apos;org.springframework.context.event.internalEventListenerFactory&apos; to allow for resolving potential circular references
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Getting BeanInfo for class [org.springframework.context.event.DefaultEventListenerFactory]
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Caching PropertyDescriptors for class [org.springframework.context.event.DefaultEventListenerFactory]
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;class&apos; of type [java.lang.Class]
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;order&apos; of type [int]
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean &apos;org.springframework.context.event.internalEventListenerFactory&apos;
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean &apos;validationConfig&apos;
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean &apos;aspectConfig&apos;
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean &apos;aspectConfig&apos;
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean &apos;aspectConfig&apos; to allow for resolving potential circular references
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Getting BeanInfo for class [com.mycompany.spring.aop.AspectConfig]
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Caching PropertyDescriptors for class [com.mycompany.spring.aop.AspectConfig]
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;class&apos; of type [java.lang.Class]
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean &apos;aspectConfig&apos;
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean &apos;protectAnnotationAspect&apos;
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean &apos;protectAnnotationAspect&apos;
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean &apos;protectAnnotationAspect&apos; to allow for resolving potential circular references
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Getting BeanInfo for class [com.mycompany.spring.aop.ProtectAnnotationAspect]
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Caching PropertyDescriptors for class [com.mycompany.spring.aop.ProtectAnnotationAspect]
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;called&apos; of type [int]
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;class&apos; of type [java.lang.Class]
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean &apos;protectAnnotationAspect&apos;
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean &apos;traceAnnotationAspect&apos;
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean &apos;traceAnnotationAspect&apos;
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean &apos;traceAnnotationAspect&apos; to allow for resolving potential circular references
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Getting BeanInfo for class [com.mycompany.spring.aop.TraceAnnotationAspect]
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Caching PropertyDescriptors for class [com.mycompany.spring.aop.TraceAnnotationAspect]
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;called&apos; of type [int]
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;class&apos; of type [java.lang.Class]
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean &apos;traceAnnotationAspect&apos;
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean &apos;methodValidationPostProcessor&apos;
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean &apos;userCreateService&apos;
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean &apos;userCreateService&apos;
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean &apos;validationConfig&apos;
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean &apos;userCreateService&apos; to allow for resolving potential circular references
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Getting BeanInfo for class [com.mycompany.spring.validation.CustomerService]
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Caching PropertyDescriptors for class [com.mycompany.spring.validation.CustomerService]
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;class&apos; of type [java.lang.Class]
+2018-05-09 06:21:52 [main] DEBUG o.s.a.a.a.AnnotationAwareAspectJAutoProxyCreator - Creating implicit proxy for bean &apos;userCreateService&apos; with 0 common interceptors and 3 specific interceptors
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.mycompany.spring.validation.CustomerService@21129f1f]
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Unable to apply any optimisations to advised method: public java.lang.String com.mycompany.spring.validation.CustomerService.createUser(java.lang.String,java.lang.String,java.lang.String)
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Unable to apply any optimisations to advised method: public java.lang.String com.mycompany.spring.validation.CustomerService.readUser(java.lang.String)
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Found &apos;equals&apos; method: public boolean java.lang.Object.equals(java.lang.Object)
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Found &apos;hashCode&apos; method: public native int java.lang.Object.hashCode()
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Unable to apply any optimisations to advised method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract org.springframework.aop.Advisor[] org.springframework.aop.framework.Advised.getAdvisors()
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setTargetSource(org.springframework.aop.TargetSource)
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isProxyTargetClass()
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(int,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setExposeProxy(boolean)
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isExposeProxy()
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract org.springframework.aop.TargetSource org.springframework.aop.framework.Advised.getTargetSource()
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setPreFiltered(boolean)
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isPreFiltered()
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract java.lang.Class[] org.springframework.aop.framework.Advised.getProxiedInterfaces()
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isInterfaceProxied(java.lang.Class)
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.removeAdvisor(int) throws org.springframework.aop.framework.AopConfigException
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvisor(org.springframework.aop.Advisor)
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.replaceAdvisor(org.springframework.aop.Advisor,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvice(org.aopalliance.aop.Advice)
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(int,org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract java.lang.String org.springframework.aop.framework.Advised.toProxyConfigString()
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.aopalliance.aop.Advice)
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.springframework.aop.Advisor)
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isFrozen()
+2018-05-09 06:21:52 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract java.lang.Class org.springframework.aop.TargetClassAware.getTargetClass()
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean &apos;userCreateService&apos;
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean &apos;org.springframework.aop.config.internalAutoProxyCreator&apos;
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean &apos;org.springframework.context.event.internalEventListenerFactory&apos;
+2018-05-09 06:21:52 [main] TRACE o.s.c.e.EventListenerMethodProcessor - No @EventListener annotations found on bean class: class org.springframework.context.annotation.ConfigurationClassPostProcessor
+2018-05-09 06:21:52 [main] TRACE o.s.c.e.EventListenerMethodProcessor - No @EventListener annotations found on bean class: class org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor
+2018-05-09 06:21:52 [main] TRACE o.s.c.e.EventListenerMethodProcessor - No @EventListener annotations found on bean class: class org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor
+2018-05-09 06:21:52 [main] TRACE o.s.c.e.EventListenerMethodProcessor - No @EventListener annotations found on bean class: class org.springframework.context.annotation.CommonAnnotationBeanPostProcessor
+2018-05-09 06:21:52 [main] TRACE o.s.c.e.EventListenerMethodProcessor - No @EventListener annotations found on bean class: class org.springframework.context.event.EventListenerMethodProcessor
+2018-05-09 06:21:52 [main] TRACE o.s.c.e.EventListenerMethodProcessor - No @EventListener annotations found on bean class: class org.springframework.context.event.DefaultEventListenerFactory
+2018-05-09 06:21:52 [main] TRACE o.s.c.e.EventListenerMethodProcessor - No @EventListener annotations found on bean class: class com.mycompany.spring.validation.ValidationConfig$$EnhancerBySpringCGLIB$$8995ba0e
+2018-05-09 06:21:52 [main] TRACE o.s.c.e.EventListenerMethodProcessor - No @EventListener annotations found on bean class: class com.mycompany.spring.aop.AspectConfig
+2018-05-09 06:21:52 [main] TRACE o.s.c.e.EventListenerMethodProcessor - No @EventListener annotations found on bean class: class com.mycompany.spring.aop.ProtectAnnotationAspect
+2018-05-09 06:21:52 [main] TRACE o.s.c.e.EventListenerMethodProcessor - No @EventListener annotations found on bean class: class com.mycompany.spring.aop.TraceAnnotationAspect
+2018-05-09 06:21:52 [main] TRACE o.s.c.e.EventListenerMethodProcessor - No @EventListener annotations found on bean class: class org.springframework.validation.beanvalidation.MethodValidationPostProcessor
+2018-05-09 06:21:52 [main] TRACE o.s.c.e.EventListenerMethodProcessor - No @EventListener annotations found on bean class: class com.mycompany.spring.validation.CustomerService
+2018-05-09 06:21:52 [main] TRACE o.s.c.e.EventListenerMethodProcessor - No @EventListener annotations found on bean class: class org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator
+2018-05-09 06:21:52 [main] TRACE o.s.c.e.EventListenerMethodProcessor - No @EventListener annotations found on bean class: class org.springframework.core.env.StandardEnvironment
+2018-05-09 06:21:52 [main] TRACE o.s.c.e.EventListenerMethodProcessor - No @EventListener annotations found on bean class: class java.util.Properties
+2018-05-09 06:21:52 [main] TRACE o.s.c.e.EventListenerMethodProcessor - No @EventListener annotations found on bean class: class java.util.Collections$UnmodifiableMap
+2018-05-09 06:21:52 [main] TRACE o.s.c.e.EventListenerMethodProcessor - No @EventListener annotations found on bean class: class org.springframework.context.annotation.ConfigurationClassParser$ImportStack
+2018-05-09 06:21:52 [main] TRACE o.s.c.e.EventListenerMethodProcessor - No @EventListener annotations found on bean class: class org.springframework.context.support.DelegatingMessageSource
+2018-05-09 06:21:52 [main] TRACE o.s.c.e.EventListenerMethodProcessor - No @EventListener annotations found on bean class: class org.springframework.context.event.SimpleApplicationEventMulticaster
+2018-05-09 06:21:52 [main] DEBUG o.s.c.s.GenericApplicationContext - Unable to locate LifecycleProcessor with name &apos;lifecycleProcessor&apos;: using default [org.springframework.context.support.DefaultLifecycleProcessor@71e9ebae]
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean &apos;lifecycleProcessor&apos;
+2018-05-09 06:21:52 [main] TRACE o.s.c.s.GenericApplicationContext - Publishing event in org.springframework.context.support.GenericApplicationContext@103f852: org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.support.GenericApplicationContext@103f852: startup date [Wed May 09 06:21:51 PET 2018]; root of context hierarchy]
+2018-05-09 06:21:52 [main] TRACE o.s.c.e.PropertySourcesPropertyResolver - Searching for key &apos;spring.liveBeansView.mbeanDomain&apos; in [systemProperties]
+2018-05-09 06:21:52 [main] TRACE o.s.c.e.PropertySourcesPropertyResolver - Searching for key &apos;spring.liveBeansView.mbeanDomain&apos; in [systemEnvironment]
+2018-05-09 06:21:52 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key &apos;spring.liveBeansView.mbeanDomain&apos; in any property source
+2018-05-09 06:21:52 [main] DEBUG o.s.t.c.c.DefaultCacheAwareContextLoaderDelegate - Storing ApplicationContext in cache under key [[MergedContextConfiguration@782663d3 testClass = CustomerServiceTest, locations = &apos;{}&apos;, classes = &apos;{class com.mycompany.spring.validation.ValidationConfig, class com.mycompany.spring.aop.AspectConfig}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]]
+2018-05-09 06:21:52 [main] DEBUG o.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@16eccb2e size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Getting BeanInfo for class [com.mycompany.spring.validation.test.CustomerServiceTest]
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Caching PropertyDescriptors for class [com.mycompany.spring.validation.test.CustomerServiceTest]
+2018-05-09 06:21:52 [main] TRACE o.s.beans.CachedIntrospectionResults - Found bean property &apos;class&apos; of type [java.lang.Class]
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean &apos;com.mycompany.spring.validation.test.CustomerServiceTest&apos;: AutowiredFieldElement for private com.mycompany.spring.validation.CustomerService com.mycompany.spring.validation.test.CustomerServiceTest.service
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean &apos;userCreateService&apos;
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name &apos;com.mycompany.spring.validation.test.CustomerServiceTest&apos; to bean named &apos;userCreateService&apos;
+2018-05-09 06:21:52 [main] TRACE o.s.test.context.TestContextManager - beforeTestMethod(): instance [com.mycompany.spring.validation.test.CustomerServiceTest@401e7803], method [public void com.mycompany.spring.validation.test.CustomerServiceTest.throwsViolationExceptionWhenReturnValueTooLong()]
+2018-05-09 06:21:52 [main] DEBUG o.s.t.c.s.AbstractDirtiesContextTestExecutionListener - Before test method: context [DefaultTestContext@42607a4f testClass = CustomerServiceTest, testInstance = com.mycompany.spring.validation.test.CustomerServiceTest@401e7803, testMethod = throwsViolationExceptionWhenReturnValueTooLong@CustomerServiceTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@782663d3 testClass = CustomerServiceTest, locations = &apos;{}&apos;, classes = &apos;{class com.mycompany.spring.validation.ValidationConfig, class com.mycompany.spring.aop.AspectConfig}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean &apos;protectAnnotationAspect&apos;
+2018-05-09 06:21:52 [main] INFO  c.m.s.aop.ProtectAnnotationAspect - Entering protectcreateUser
+2018-05-09 06:21:52 [main] INFO  c.m.s.aop.ProtectAnnotationAspect - Exiting protect createUser
+2018-05-09 06:21:52 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean &apos;traceAnnotationAspect&apos;
+2018-05-09 06:21:52 [main] INFO  c.m.spring.aop.TraceAnnotationAspect - Entering tracecreateUser
+2018-05-09 06:21:52 [main] INFO  c.m.spring.aop.TraceAnnotationAspect - Exiting tracecreateUser
+2018-05-09 06:21:52 [main] DEBUG o.h.v.i.m.d.ConstraintDescriptorImpl - Adding composing constraint: ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=PARAMETER, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@39de3d36, groups=[Ljava.lang.Class;@6ce86ce1}, constraintType=GENERIC}.
+2018-05-09 06:21:52 [main] DEBUG o.h.v.i.m.d.ConstraintDescriptorImpl - Adding composing constraint: ConstraintDescriptorImpl{annotation=javax.validation.constraints.Pattern, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=PARAMETER, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={flags=[Ljavax.validation.constraints.Pattern$Flag;@38234a38, regexp=.*, groups=[Ljava.lang.Class;@63fbfaeb, message={javax.validation.constraints.Pattern.message}, payload=[Ljava.lang.Class;@602e0143}, constraintType=GENERIC}.
+2018-05-09 06:21:52 [main] DEBUG o.h.v.i.m.d.ConstraintDescriptorImpl - Adding composing constraint: ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=PARAMETER, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@545b995e, groups=[Ljava.lang.Class;@76a2ddf3}, constraintType=GENERIC}.
+2018-05-09 06:21:52 [main] DEBUG o.h.v.i.m.d.ConstraintDescriptorImpl - Adding composing constraint: ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=PARAMETER, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@524f3b3a, groups=[Ljava.lang.Class;@41e68d87}, constraintType=GENERIC}.
+2018-05-09 06:21:52 [main] DEBUG o.h.v.i.m.d.ConstraintDescriptorImpl - Adding composing constraint: ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=PARAMETER, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@2bd08376, groups=[Ljava.lang.Class;@e70f13a}, constraintType=GENERIC}.
+2018-05-09 06:21:52 [main] TRACE o.h.v.i.m.a.BeanMetaDataImpl - Members of the default group sequence for bean com.mycompany.spring.validation.CustomerService are: [interface javax.validation.groups.Default].
+2018-05-09 06:21:52 [main] TRACE o.h.v.i.e.c.ConstraintTree - Validating value user@domain.com against constraint defined by ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=PARAMETER, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@39de3d36, groups=[Ljava.lang.Class;@6ce86ce1}, constraintType=GENERIC}.
+2018-05-09 06:21:52 [main] TRACE o.h.v.i.e.c.ConstraintTree - Validating value user@domain.com against constraint defined by ConstraintDescriptorImpl{annotation=org.hibernate.validator.constraints.NotBlank, payloads=[], hasComposingConstraints=false, isReportAsSingleInvalidConstraint=true, elementType=PARAMETER, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={org.hibernate.validator.constraints.NotBlank.message}, payload=[Ljava.lang.Class;@403f0a22, groups=[Ljava.lang.Class;@503ecb24}, constraintType=GENERIC}.
+2018-05-09 06:21:52 [main] TRACE o.h.v.i.e.c.ConstraintTree - Validating value user@domain.com against constraint defined by ConstraintDescriptorImpl{annotation=javax.validation.constraints.Pattern, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=PARAMETER, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={flags=[Ljavax.validation.constraints.Pattern$Flag;@38234a38, regexp=.*, groups=[Ljava.lang.Class;@63fbfaeb, message={javax.validation.constraints.Pattern.message}, payload=[Ljava.lang.Class;@602e0143}, constraintType=GENERIC}.
+2018-05-09 06:21:52 [main] TRACE o.h.v.i.e.c.ConstraintTree - Validating value user@domain.com against constraint defined by ConstraintDescriptorImpl{annotation=org.hibernate.validator.constraints.Email, payloads=[], hasComposingConstraints=false, isReportAsSingleInvalidConstraint=true, elementType=PARAMETER, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={flags=[Ljavax.validation.constraints.Pattern$Flag;@38234a38, regexp=.*, groups=[Ljava.lang.Class;@71c27ee8, message={org.hibernate.validator.constraints.Email.message}, payload=[Ljava.lang.Class;@3e7dd664}, constraintType=GENERIC}.
+2018-05-09 06:21:52 [main] TRACE o.h.v.i.e.c.ConstraintTree - Validating value too_long_username against constraint defined by ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=PARAMETER, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@545b995e, groups=[Ljava.lang.Class;@76a2ddf3}, constraintType=GENERIC}.
+2018-05-09 06:21:52 [main] TRACE o.h.v.i.e.c.ConstraintValidatorManager - Constraint validator org.hibernate.validator.internal.constraintvalidators.NotNullValidator@6fb365ed found in cache.
+2018-05-09 06:21:52 [main] TRACE o.h.v.i.e.c.ConstraintTree - Validating value too_long_username against constraint defined by ConstraintDescriptorImpl{annotation=org.hibernate.validator.constraints.NotBlank, payloads=[], hasComposingConstraints=false, isReportAsSingleInvalidConstraint=true, elementType=PARAMETER, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={org.hibernate.validator.constraints.NotBlank.message}, payload=[Ljava.lang.Class;@403f0a22, groups=[Ljava.lang.Class;@503ecb24}, constraintType=GENERIC}.
+2018-05-09 06:21:52 [main] TRACE o.h.v.i.e.c.ConstraintValidatorManager - Constraint validator org.hibernate.validator.internal.constraintvalidators.NotBlankValidator@6e950bcf found in cache.
+2018-05-09 06:21:52 [main] TRACE o.h.v.i.e.c.ConstraintTree - Validating value valid against constraint defined by ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=PARAMETER, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@524f3b3a, groups=[Ljava.lang.Class;@41e68d87}, constraintType=GENERIC}.
+2018-05-09 06:21:52 [main] TRACE o.h.v.i.e.c.ConstraintValidatorManager - Constraint validator org.hibernate.validator.internal.constraintvalidators.NotNullValidator@6fb365ed found in cache.
+2018-05-09 06:21:52 [main] TRACE o.h.v.i.e.c.ConstraintTree - Validating value valid against constraint defined by ConstraintDescriptorImpl{annotation=org.hibernate.validator.constraints.NotBlank, payloads=[], hasComposingConstraints=false, isReportAsSingleInvalidConstraint=true, elementType=PARAMETER, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={org.hibernate.validator.constraints.NotBlank.message}, payload=[Ljava.lang.Class;@403f0a22, groups=[Ljava.lang.Class;@503ecb24}, constraintType=GENERIC}.
+2018-05-09 06:21:52 [main] TRACE o.h.v.i.e.c.ConstraintValidatorManager - Constraint validator org.hibernate.validator.internal.constraintvalidators.NotBlankValidator@6e950bcf found in cache.
+2018-05-09 06:21:53 [main] TRACE o.h.v.i.e.c.ConstraintTree - Validating value too_long_username against constraint defined by ConstraintDescriptorImpl{annotation=org.hibernate.validator.constraints.Length, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=METHOD, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={groups=[Ljava.lang.Class;@4b14918a, min=3, message={org.hibernate.validator.constraints.Length.message}, payload=[Ljava.lang.Class;@6d1ef78d, max=5}, constraintType=GENERIC}.
+2018-05-09 06:21:53 [main] TRACE o.h.v.r.PlatformResourceBundleLocator - ValidationMessages not found by thread local classloader
+2018-05-09 06:21:53 [main] TRACE o.h.v.r.PlatformResourceBundleLocator - ValidationMessages not found by validator classloader
+2018-05-09 06:21:53 [main] DEBUG o.h.v.r.PlatformResourceBundleLocator - ValidationMessages not found.
+2018-05-09 06:21:53 [main] DEBUG o.h.v.r.PlatformResourceBundleLocator - org.hibernate.validator.ValidationMessages found.
+2018-05-09 06:21:53 [main] TRACE o.s.test.context.TestContextManager - afterTestMethod(): instance [com.mycompany.spring.validation.test.CustomerServiceTest@401e7803], method [public void com.mycompany.spring.validation.test.CustomerServiceTest.throwsViolationExceptionWhenReturnValueTooLong()], exception [org.junit.ComparisonFailure: expected:&lt;l[ength must be between 3 and] 5&gt; but was:&lt;l[a longitud tiene que estar entre 3 y] 5&gt;]
+2018-05-09 06:21:53 [main] DEBUG o.s.t.c.s.AbstractDirtiesContextTestExecutionListener - After test method: context [DefaultTestContext@42607a4f testClass = CustomerServiceTest, testInstance = com.mycompany.spring.validation.test.CustomerServiceTest@401e7803, testMethod = throwsViolationExceptionWhenReturnValueTooLong@CustomerServiceTest, testException = org.junit.ComparisonFailure: expected:&lt;l[ength must be between 3 and] 5&gt; but was:&lt;l[a longitud tiene que estar entre 3 y] 5&gt;, mergedContextConfiguration = [MergedContextConfiguration@782663d3 testClass = CustomerServiceTest, locations = &apos;{}&apos;, classes = &apos;{class com.mycompany.spring.validation.ValidationConfig, class com.mycompany.spring.aop.AspectConfig}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+</system-out>
+  </testcase>
+  <testcase classname="com.mycompany.spring.validation.test.CustomerServiceTest" name="throwsViolationExceptionWhenEmailInvalidArgumentsInvalid" time="0.028">
+    <failure message="expected:&lt;no[t a well-formed email address]&gt; but was:&lt;no[ es una dirección de correo bien formada]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;no[t a well-formed email address]&gt; but was:&lt;no[ es una dirección de correo bien formada]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.mycompany.spring.validation.test.CustomerServiceTest.throwsViolationExceptionWhenEmailInvalidArgumentsInvalid(CustomerServiceTest.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>2018-05-09 06:21:53 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mycompany.spring.validation.test.CustomerServiceTest]
+2018-05-09 06:21:53 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mycompany.spring.validation.test.CustomerServiceTest]
+2018-05-09 06:21:53 [main] TRACE o.s.test.context.TestContextManager - prepareTestInstance(): instance [com.mycompany.spring.validation.test.CustomerServiceTest@45fd9a4d]
+2018-05-09 06:21:53 [main] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@42607a4f testClass = CustomerServiceTest, testInstance = com.mycompany.spring.validation.test.CustomerServiceTest@45fd9a4d, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@782663d3 testClass = CustomerServiceTest, locations = &apos;{}&apos;, classes = &apos;{class com.mycompany.spring.validation.ValidationConfig, class com.mycompany.spring.aop.AspectConfig}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]]].
+2018-05-09 06:21:53 [main] DEBUG o.s.t.c.c.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@782663d3 testClass = CustomerServiceTest, locations = &apos;{}&apos;, classes = &apos;{class com.mycompany.spring.validation.ValidationConfig, class com.mycompany.spring.aop.AspectConfig}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]]
+2018-05-09 06:21:53 [main] DEBUG o.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@16eccb2e size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+2018-05-09 06:21:53 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean &apos;com.mycompany.spring.validation.test.CustomerServiceTest&apos;: AutowiredFieldElement for private com.mycompany.spring.validation.CustomerService com.mycompany.spring.validation.test.CustomerServiceTest.service
+2018-05-09 06:21:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean &apos;userCreateService&apos;
+2018-05-09 06:21:53 [main] TRACE o.s.test.context.TestContextManager - beforeTestMethod(): instance [com.mycompany.spring.validation.test.CustomerServiceTest@45fd9a4d], method [public void com.mycompany.spring.validation.test.CustomerServiceTest.throwsViolationExceptionWhenEmailInvalidArgumentsInvalid()]
+2018-05-09 06:21:53 [main] DEBUG o.s.t.c.s.AbstractDirtiesContextTestExecutionListener - Before test method: context [DefaultTestContext@42607a4f testClass = CustomerServiceTest, testInstance = com.mycompany.spring.validation.test.CustomerServiceTest@45fd9a4d, testMethod = throwsViolationExceptionWhenEmailInvalidArgumentsInvalid@CustomerServiceTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@782663d3 testClass = CustomerServiceTest, locations = &apos;{}&apos;, classes = &apos;{class com.mycompany.spring.validation.ValidationConfig, class com.mycompany.spring.aop.AspectConfig}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+2018-05-09 06:21:53 [main] INFO  c.m.s.aop.ProtectAnnotationAspect - Entering protectcreateUser
+2018-05-09 06:21:53 [main] INFO  c.m.s.aop.ProtectAnnotationAspect - Exiting protect createUser
+2018-05-09 06:21:53 [main] INFO  c.m.spring.aop.TraceAnnotationAspect - Entering tracecreateUser
+2018-05-09 06:21:53 [main] INFO  c.m.spring.aop.TraceAnnotationAspect - Exiting tracecreateUser
+2018-05-09 06:21:53 [main] TRACE o.h.v.i.e.c.ConstraintTree - Validating value invalid_email against constraint defined by ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=PARAMETER, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@39de3d36, groups=[Ljava.lang.Class;@6ce86ce1}, constraintType=GENERIC}.
+2018-05-09 06:21:53 [main] TRACE o.h.v.i.e.c.ConstraintValidatorManager - Constraint validator org.hibernate.validator.internal.constraintvalidators.NotNullValidator@6fb365ed found in cache.
+2018-05-09 06:21:53 [main] TRACE o.h.v.i.e.c.ConstraintTree - Validating value invalid_email against constraint defined by ConstraintDescriptorImpl{annotation=org.hibernate.validator.constraints.NotBlank, payloads=[], hasComposingConstraints=false, isReportAsSingleInvalidConstraint=true, elementType=PARAMETER, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={org.hibernate.validator.constraints.NotBlank.message}, payload=[Ljava.lang.Class;@403f0a22, groups=[Ljava.lang.Class;@503ecb24}, constraintType=GENERIC}.
+2018-05-09 06:21:53 [main] TRACE o.h.v.i.e.c.ConstraintValidatorManager - Constraint validator org.hibernate.validator.internal.constraintvalidators.NotBlankValidator@6e950bcf found in cache.
+2018-05-09 06:21:53 [main] TRACE o.h.v.i.e.c.ConstraintTree - Validating value invalid_email against constraint defined by ConstraintDescriptorImpl{annotation=javax.validation.constraints.Pattern, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=PARAMETER, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={flags=[Ljavax.validation.constraints.Pattern$Flag;@38234a38, regexp=.*, groups=[Ljava.lang.Class;@63fbfaeb, message={javax.validation.constraints.Pattern.message}, payload=[Ljava.lang.Class;@602e0143}, constraintType=GENERIC}.
+2018-05-09 06:21:53 [main] TRACE o.h.v.i.e.c.ConstraintValidatorManager - Constraint validator org.hibernate.validator.internal.constraintvalidators.PatternValidator@50468873 found in cache.
+2018-05-09 06:21:53 [main] TRACE o.h.v.i.e.c.ConstraintTree - Validating value invalid_email against constraint defined by ConstraintDescriptorImpl{annotation=org.hibernate.validator.constraints.Email, payloads=[], hasComposingConstraints=false, isReportAsSingleInvalidConstraint=true, elementType=PARAMETER, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={flags=[Ljavax.validation.constraints.Pattern$Flag;@38234a38, regexp=.*, groups=[Ljava.lang.Class;@71c27ee8, message={org.hibernate.validator.constraints.Email.message}, payload=[Ljava.lang.Class;@3e7dd664}, constraintType=GENERIC}.
+2018-05-09 06:21:53 [main] TRACE o.h.v.i.e.c.ConstraintValidatorManager - Constraint validator org.hibernate.validator.internal.constraintvalidators.EmailValidator@146587a2 found in cache.
+2018-05-09 06:21:53 [main] TRACE o.h.v.r.PlatformResourceBundleLocator - ValidationMessages not found by thread local classloader
+2018-05-09 06:21:53 [main] TRACE o.h.v.r.PlatformResourceBundleLocator - ValidationMessages not found by validator classloader
+2018-05-09 06:21:53 [main] DEBUG o.h.v.r.PlatformResourceBundleLocator - ValidationMessages not found.
+2018-05-09 06:21:53 [main] DEBUG o.h.v.r.PlatformResourceBundleLocator - org.hibernate.validator.ValidationMessages found.
+2018-05-09 06:21:53 [main] TRACE o.h.v.i.e.c.ConstraintTree - Validating value valid against constraint defined by ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=PARAMETER, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@545b995e, groups=[Ljava.lang.Class;@76a2ddf3}, constraintType=GENERIC}.
+2018-05-09 06:21:53 [main] TRACE o.h.v.i.e.c.ConstraintValidatorManager - Constraint validator org.hibernate.validator.internal.constraintvalidators.NotNullValidator@6fb365ed found in cache.
+2018-05-09 06:21:53 [main] TRACE o.h.v.i.e.c.ConstraintTree - Validating value valid against constraint defined by ConstraintDescriptorImpl{annotation=org.hibernate.validator.constraints.NotBlank, payloads=[], hasComposingConstraints=false, isReportAsSingleInvalidConstraint=true, elementType=PARAMETER, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={org.hibernate.validator.constraints.NotBlank.message}, payload=[Ljava.lang.Class;@403f0a22, groups=[Ljava.lang.Class;@503ecb24}, constraintType=GENERIC}.
+2018-05-09 06:21:53 [main] TRACE o.h.v.i.e.c.ConstraintValidatorManager - Constraint validator org.hibernate.validator.internal.constraintvalidators.NotBlankValidator@6e950bcf found in cache.
+2018-05-09 06:21:53 [main] TRACE o.h.v.i.e.c.ConstraintTree - Validating value valid against constraint defined by ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=PARAMETER, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@524f3b3a, groups=[Ljava.lang.Class;@41e68d87}, constraintType=GENERIC}.
+2018-05-09 06:21:53 [main] TRACE o.h.v.i.e.c.ConstraintValidatorManager - Constraint validator org.hibernate.validator.internal.constraintvalidators.NotNullValidator@6fb365ed found in cache.
+2018-05-09 06:21:53 [main] TRACE o.h.v.i.e.c.ConstraintTree - Validating value valid against constraint defined by ConstraintDescriptorImpl{annotation=org.hibernate.validator.constraints.NotBlank, payloads=[], hasComposingConstraints=false, isReportAsSingleInvalidConstraint=true, elementType=PARAMETER, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={org.hibernate.validator.constraints.NotBlank.message}, payload=[Ljava.lang.Class;@403f0a22, groups=[Ljava.lang.Class;@503ecb24}, constraintType=GENERIC}.
+2018-05-09 06:21:53 [main] TRACE o.h.v.i.e.c.ConstraintValidatorManager - Constraint validator org.hibernate.validator.internal.constraintvalidators.NotBlankValidator@6e950bcf found in cache.
+2018-05-09 06:21:53 [main] TRACE o.s.test.context.TestContextManager - afterTestMethod(): instance [com.mycompany.spring.validation.test.CustomerServiceTest@45fd9a4d], method [public void com.mycompany.spring.validation.test.CustomerServiceTest.throwsViolationExceptionWhenEmailInvalidArgumentsInvalid()], exception [org.junit.ComparisonFailure: expected:&lt;no[t a well-formed email address]&gt; but was:&lt;no[ es una dirección de correo bien formada]&gt;]
+2018-05-09 06:21:53 [main] DEBUG o.s.t.c.s.AbstractDirtiesContextTestExecutionListener - After test method: context [DefaultTestContext@42607a4f testClass = CustomerServiceTest, testInstance = com.mycompany.spring.validation.test.CustomerServiceTest@45fd9a4d, testMethod = throwsViolationExceptionWhenEmailInvalidArgumentsInvalid@CustomerServiceTest, testException = org.junit.ComparisonFailure: expected:&lt;no[t a well-formed email address]&gt; but was:&lt;no[ es una dirección de correo bien formada]&gt;, mergedContextConfiguration = [MergedContextConfiguration@782663d3 testClass = CustomerServiceTest, locations = &apos;{}&apos;, classes = &apos;{class com.mycompany.spring.validation.ValidationConfig, class com.mycompany.spring.aop.AspectConfig}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+</system-out>
+  </testcase>
+  <testcase classname="com.mycompany.spring.validation.test.CustomerServiceTest" name="createsUser" time="0.023"/>
+  <testcase classname="com.mycompany.spring.validation.test.CustomerServiceTest" name="throwsViolationExceptionWhenCustomerRead" time="0.001">
+    <failure message="expected:&lt;[may not be empty]&gt; but was:&lt;[no puede estar vacío]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[may not be empty]&gt; but was:&lt;[no puede estar vacío]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.mycompany.spring.validation.test.CustomerServiceTest.throwsViolationExceptionWhenCustomerRead(CustomerServiceTest.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>2018-05-09 06:21:53 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mycompany.spring.validation.test.CustomerServiceTest]
+2018-05-09 06:21:53 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mycompany.spring.validation.test.CustomerServiceTest]
+2018-05-09 06:21:53 [main] TRACE o.s.test.context.TestContextManager - prepareTestInstance(): instance [com.mycompany.spring.validation.test.CustomerServiceTest@35229f85]
+2018-05-09 06:21:53 [main] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@42607a4f testClass = CustomerServiceTest, testInstance = com.mycompany.spring.validation.test.CustomerServiceTest@35229f85, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@782663d3 testClass = CustomerServiceTest, locations = &apos;{}&apos;, classes = &apos;{class com.mycompany.spring.validation.ValidationConfig, class com.mycompany.spring.aop.AspectConfig}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]]].
+2018-05-09 06:21:53 [main] DEBUG o.s.t.c.c.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@782663d3 testClass = CustomerServiceTest, locations = &apos;{}&apos;, classes = &apos;{class com.mycompany.spring.validation.ValidationConfig, class com.mycompany.spring.aop.AspectConfig}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]]
+2018-05-09 06:21:53 [main] DEBUG o.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@16eccb2e size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+2018-05-09 06:21:53 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean &apos;com.mycompany.spring.validation.test.CustomerServiceTest&apos;: AutowiredFieldElement for private com.mycompany.spring.validation.CustomerService com.mycompany.spring.validation.test.CustomerServiceTest.service
+2018-05-09 06:21:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean &apos;userCreateService&apos;
+2018-05-09 06:21:53 [main] TRACE o.s.test.context.TestContextManager - beforeTestMethod(): instance [com.mycompany.spring.validation.test.CustomerServiceTest@35229f85], method [public void com.mycompany.spring.validation.test.CustomerServiceTest.throwsViolationExceptionWhenCustomerRead()]
+2018-05-09 06:21:53 [main] DEBUG o.s.t.c.s.AbstractDirtiesContextTestExecutionListener - Before test method: context [DefaultTestContext@42607a4f testClass = CustomerServiceTest, testInstance = com.mycompany.spring.validation.test.CustomerServiceTest@35229f85, testMethod = throwsViolationExceptionWhenCustomerRead@CustomerServiceTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@782663d3 testClass = CustomerServiceTest, locations = &apos;{}&apos;, classes = &apos;{class com.mycompany.spring.validation.ValidationConfig, class com.mycompany.spring.aop.AspectConfig}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+2018-05-09 06:21:53 [main] INFO  c.m.s.aop.ProtectAnnotationAspect - Entering protectreadUser
+2018-05-09 06:21:53 [main] INFO  c.m.s.aop.ProtectAnnotationAspect - Exiting protect readUser
+2018-05-09 06:21:53 [main] INFO  c.m.spring.aop.TraceAnnotationAspect - Entering tracereadUser
+2018-05-09 06:21:53 [main] INFO  c.m.spring.aop.TraceAnnotationAspect - Exiting tracereadUser
+2018-05-09 06:21:53 [main] TRACE o.h.v.i.e.c.ConstraintTree - Validating value null against constraint defined by ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=PARAMETER, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@2bd08376, groups=[Ljava.lang.Class;@e70f13a}, constraintType=GENERIC}.
+2018-05-09 06:21:53 [main] TRACE o.h.v.i.e.c.ConstraintValidatorManager - Constraint validator org.hibernate.validator.internal.constraintvalidators.NotNullValidator@6fb365ed found in cache.
+2018-05-09 06:21:53 [main] TRACE o.h.v.r.PlatformResourceBundleLocator - ValidationMessages not found by thread local classloader
+2018-05-09 06:21:53 [main] TRACE o.h.v.r.PlatformResourceBundleLocator - ValidationMessages not found by validator classloader
+2018-05-09 06:21:53 [main] DEBUG o.h.v.r.PlatformResourceBundleLocator - ValidationMessages not found.
+2018-05-09 06:21:53 [main] DEBUG o.h.v.r.PlatformResourceBundleLocator - org.hibernate.validator.ValidationMessages found.
+2018-05-09 06:21:53 [main] TRACE o.h.v.r.PlatformResourceBundleLocator - ValidationMessages not found by thread local classloader
+2018-05-09 06:21:53 [main] TRACE o.h.v.r.PlatformResourceBundleLocator - ValidationMessages not found by validator classloader
+2018-05-09 06:21:53 [main] DEBUG o.h.v.r.PlatformResourceBundleLocator - ValidationMessages not found.
+2018-05-09 06:21:53 [main] DEBUG o.h.v.r.PlatformResourceBundleLocator - org.hibernate.validator.ValidationMessages found.
+2018-05-09 06:21:53 [main] TRACE o.s.test.context.TestContextManager - afterTestMethod(): instance [com.mycompany.spring.validation.test.CustomerServiceTest@35229f85], method [public void com.mycompany.spring.validation.test.CustomerServiceTest.throwsViolationExceptionWhenCustomerRead()], exception [org.junit.ComparisonFailure: expected:&lt;[may not be empty]&gt; but was:&lt;[no puede estar vacío]&gt;]
+2018-05-09 06:21:53 [main] DEBUG o.s.t.c.s.AbstractDirtiesContextTestExecutionListener - After test method: context [DefaultTestContext@42607a4f testClass = CustomerServiceTest, testInstance = com.mycompany.spring.validation.test.CustomerServiceTest@35229f85, testMethod = throwsViolationExceptionWhenCustomerRead@CustomerServiceTest, testException = org.junit.ComparisonFailure: expected:&lt;[may not be empty]&gt; but was:&lt;[no puede estar vacío]&gt;, mergedContextConfiguration = [MergedContextConfiguration@782663d3 testClass = CustomerServiceTest, locations = &apos;{}&apos;, classes = &apos;{class com.mycompany.spring.validation.ValidationConfig, class com.mycompany.spring.aop.AspectConfig}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+</system-out>
+  </testcase>
+  <testcase classname="com.mycompany.spring.validation.test.CustomerServiceTest" name="throwsViolationExceptionWhenAllArgumentsInvalid" time="0.034"/>
+  <testcase classname="com.mycompany.spring.validation.test.CustomerServiceTest" name="throwsViolationExceptionWhen2ArgumentsInvalid" time="0.017"/>
+</testsuite>

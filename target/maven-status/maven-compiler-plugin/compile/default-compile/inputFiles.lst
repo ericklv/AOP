@@ -1,0 +1,7 @@
+/home/thanatos/arru/spring-validation-aop/src/main/java/com/mycompany/spring/validation/ValidationConfig.java
+/home/thanatos/arru/spring-validation-aop/src/main/java/com/mycompany/spring/validation/CustomerService.java
+/home/thanatos/arru/spring-validation-aop/src/main/java/com/mycompany/spring/aop/aspect/annotation/Protect.java
+/home/thanatos/arru/spring-validation-aop/src/main/java/com/mycompany/spring/aop/AspectConfig.java
+/home/thanatos/arru/spring-validation-aop/src/main/java/com/mycompany/spring/aop/ProtectAnnotationAspect.java
+/home/thanatos/arru/spring-validation-aop/src/main/java/com/mycompany/spring/aop/aspect/annotation/Trace.java
+/home/thanatos/arru/spring-validation-aop/src/main/java/com/mycompany/spring/aop/TraceAnnotationAspect.java
